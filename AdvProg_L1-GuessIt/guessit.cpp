@@ -27,11 +27,11 @@ int generateRandomNumber() {
 int getPlayerGuess() {
     // TODO: Ask the player guest and return the player's number
     int PlayerGuess;
-	cout << "Enter Your Guess (1...100) : ";
 	cin >> PlayerGuess;
 	return PlayerGuess;
 }
 
+///tét
 
 /***
     Args:
@@ -77,13 +77,13 @@ bool checkSuccess(string answer) {
 ***/
 bool checkContinuePlaying(char isContinued) {
     // TODO: return result after checking player continue playing or not
-    if (isContinued == '1') {
+    if (isContinued == 'Y' || isContinued == 'y') {
         return true;
     }
     return false;
 }
 
-
+// test test test   
 /***
     Args:
         
@@ -93,7 +93,6 @@ bool checkContinuePlaying(char isContinued) {
 char getPlayerOpinion() {
     // TODO: Ask the player about continue playing and return the player's choice
     char isContinued;
-    cout << "Do you want to play again ? (1 or 0)" << endl;
     cin >> isContinued;
     return isContinued;
 }

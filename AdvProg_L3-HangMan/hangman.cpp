@@ -1,6 +1,6 @@
 #include <iostream>
 #include "hangman.h"
-
+#include <string>
 using std::string;
 using std::vector;
 using std::ifstream;
@@ -55,6 +55,7 @@ bool isCharInWord(const char ch, const string& word)
     return true;
 }
 
+
 /***
     Args:
         wordList (vector<string>): A list of words
@@ -71,6 +72,8 @@ string chooseWordFromList(const vector<string>& wordList, int index)
     }
     return answer;
 }
+
+// testjsdafjsd
 
 /***
     Args:
@@ -111,6 +114,8 @@ void updateSecretWord(string& secretWord, const char ch, const string& word)
     }
 }
 
+
+// test test test
 /***
     Args:
         ch (char): a character
@@ -119,8 +124,8 @@ void updateSecretWord(string& secretWord, const char ch, const string& word)
         void
 ***/
 void updateEnteredChars(const char ch, string& chars){
-    // TODO: append the character ch is in end of the text chars
-    chars += ch;
+    // TODO: append the character ch is in end of the text char
+    chars = chars +  ch +  " ";
 }
 
 /***
